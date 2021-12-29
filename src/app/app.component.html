@@ -1,0 +1,15 @@
+
+<div id = "card" *ngIf="!mostrar" style="text-align: center;"> 
+    <img src="../assets/img/group.png" width="100" height="100" alt="imagen-equipo">
+    <div class="card-body">
+      <h5 class="card-title">Registro de equipo</h5>
+      <p class="card-text">Registre su equipo y sus integrantes, para acceder a sus funcionalidades</p>
+      <button class="btn btn-primary" (click)="mostrar=true"> Registrar</button>
+    </div>
+</div>
+
+<div *ngIf="mostrar"> 
+<app-template-forms></app-template-forms>
+<hr>
+<app-reactive-forms></app-reactive-forms>
+</div>
